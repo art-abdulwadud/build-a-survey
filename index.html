@@ -13,13 +13,38 @@
     <link href="css/aos.css" rel="stylesheet">
 </head>
 <body>
-    <h1 id="title" class="text-center">Course Feedback Survey</h1>
+    <section class="text-center">
+        <h1 id="title">Course Feedback Survey</h1>
+        <p id="description">Give us a feedback on how educative this course was to you so that we can provide with a better</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">What is your name?</label><br>
+            <input type="text" name="name" id="name" placeholder="Name" required><br>
+            <label for="name" id="email-label">What is your email address?</label><br>
+            <input type="email" name="email" id="email" placeholder="Email" required><br>
+            <label for="name" id="number-label">How old are you</label><br>
+            <input type="number" name="number" id="number" placeholder="Age" min="1" max="30" required><br>
+            <label for="name" id="dropdown-label">How useful was this course to you?</label><br>
+            <select name="dropdown" id="dropdown" required>
+                <option value="">Really useful</option>
+                <option value="">Useful</option>
+                <option value="">A bit useful</option>
+                <option value="">Not useful at all</option>
+            </select><br>
+            <label for="name" id="dropdown-label">How soon were you able to finish the course?</label><br>
+            <input type="radio" name="duration"><label>Less than Month</label><br>
+            <input type="radio" name="duration"><label>Less than Week</label><br>
+            <input type="radio" name="duration"><label>Less than 3 days</label><br>
+            <input type="radio" name="duration"><label>Less than that</label><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </section>
     
     <!-- Optional JavaScript -->
     <script src="js/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="jquery/jquery-3.3.1.slim.min.js"></script>
     <script src="popper/popper.min.js"></script>
