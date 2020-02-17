@@ -27,3 +27,8 @@ For radio type:
 ```
 <input type="radio" name="radio" required>
 ```
+
+For checkbox type:
+```
+<input type="checkbox" name="checkbox" required>
+```
