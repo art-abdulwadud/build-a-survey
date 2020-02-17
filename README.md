@@ -27,6 +27,13 @@ For radio type:
 ```
 <input type="radio" name="radio" required>
 ```
+When using radio buttons, you can group them using the `name` attribute if you want the user to select only one radio button from a group of them e.g
+```
+<input type="radio" name="generations" required>First
+<input type="radio" name="generations" required>Second
+<input type="radio" name="generations" required>Third
+```
+You can set the name tag attribute to whatever name you wish.
 
 For checkbox type:
 ```
@@ -43,3 +50,21 @@ If you want a user to be able to select an option from a group of options, use a
 </select>
 ```
 
+For creating a textarea
+```
+<textarea placeholder="Please send us a feedback..." name="feedback" cols="25" rows="7" required></textarea>
+```
+You can set the rows and columns to your custom preference. They determin the height and width of the textarea.
+
+For creating a submit input
+```
+<input type="submit" value="Submit">
+```
+You can set the value to whatever you please
+
+And finally, you can wrap all this tags within a form tag
+```
+<form>
+	...
+</form>
+```
