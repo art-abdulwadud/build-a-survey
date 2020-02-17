@@ -32,3 +32,14 @@ For checkbox type:
 ```
 <input type="checkbox" name="checkbox" required>
 ```
+
+If you want a user to be able to select an option from a group of options, use a select tag
+```
+<select name="dropdown" id="dropdown" required>
+    <option value="really useful">Really useful</option>
+    <option value="useful">Useful</option>
+    <option value="a bit useful">A bit useful</option>
+    <option value="not useful at all">Not useful at all</option>
+</select>
+```
+
