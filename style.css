@@ -4,6 +4,8 @@ body{
 }
 main{
 	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+	padding-bottom: 5%;
+	box-shadow: inset 0 0 70px #000000;
 }
 /** Title wrapper **/
 .t-wrapper{
@@ -48,6 +50,7 @@ form{
 	background: white;
 	padding-top: 10px;
 	border-radius: 20px;
+	box-shadow: 5px 5px 5px 10px rgba(0,0,0,0.4);
 }
 input[type="text"],input[type="email"],input[type="number"],label,option, textarea{
 	font-family: 'Ubuntu Condensed', sans-serif;
