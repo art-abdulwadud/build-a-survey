@@ -1,7 +1,7 @@
 
-# Creating a form with HTML5 and CSS
+# Creating a form with HTML5
 
-For creating a form, we are going to need HTML5 inputs and CSS for styling it up a bit.
+For creating a form, we are going to need HTML5 tags such as input tags, select tags, textarea tags and a form tag.
 
 ## Types of input
 
@@ -68,3 +68,4 @@ And finally, you can wrap all this tags within a form tag
 	...
 </form>
 ```
+
