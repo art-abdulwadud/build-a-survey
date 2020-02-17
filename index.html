@@ -13,8 +13,10 @@
     <link href="css/aos.css" rel="stylesheet">
 </head>
 <body>
-    <section class="text-center">
-        <h1 id="title">Course Feedback Survey</h1>
+    <main class="text-center">
+        <div class="t-wrapper">
+            <h1 id="title">Course Feedback Survey</h1>
+        </div>
         <p id="description">Give us a feedback on how educative this course was to you so that we can provide with a better</p>
         <form id="survey-form">
             <label for="name" id="name-label">What is your name?</label><br>
@@ -31,20 +33,25 @@
                 <option value="">Not useful at all</option>
             </select><br>
             <label for="name" id="dropdown-label">How soon were you able to finish the course?</label><br>
-            <input type="radio" name="duration"><label>Less than Month</label><br>
-            <input type="radio" name="duration"><label>Less than Week</label><br>
-            <input type="radio" name="duration"><label>Less than 3 days</label><br>
-            <input type="radio" name="duration"><label>Less than that</label><br>
+            <input type="radio" name="duration" value="Less than Month"><label>Less than Month</label><br>
+            <input type="radio" name="duration" value="Less than Week"><label>Less than Week</label><br>
+            <input type="radio" name="duration" value="Less than 3 days"><label>Less than 3 days</label><br>
+            <input type="radio" name="duration" value="Less than that"><label>Less than that</label><br>
+            <div>
+                <input type="checkbox" name="check" value="Absolute beginner">Absolute beginner
+                <input type="checkbox" name="check" value="Junior developer">Junior developer
+                <input type="checkbox" name="check" value="Senior Developer ">Senior Developer 
+            </div>
+            <textarea name="feedback" id="" cols="30" rows="10"></textarea><br>
             <input type="submit" value="Submit" id="submit">
         </form>
-    </section>
+    </main>
     
     <!-- Optional JavaScript -->
     <script src="js/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="jquery/jquery-3.3.1.slim.min.js"></script>
     <script src="popper/popper.min.js"></script>
