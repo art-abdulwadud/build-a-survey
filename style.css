@@ -9,10 +9,20 @@ main{
 .t-wrapper{
 	background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
 	min-height: 10vh;
+	position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    z-index: 99;
 }
 #title{
 	font-family: 'Akronim', cursive;
-	font-size: calc(100% + 30px);
+	font-size: calc(100% + 25px);
+}
+.form-wrapper{
+	position: relative;
 }
 #description{
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -22,6 +32,10 @@ main{
 .p-list{
 	list-style: none;
 	display: contents;
+}
+.p-item{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: calc(60% + 15px);
 }
 form{
 	display: flex;
@@ -46,4 +60,66 @@ input[type="text"],input[type="email"], input[type="number"]{
 	max-width: 200px;
 	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: calc(60% + 15px);
+}
+/*
+  ##Device = Desktops
+*/
+
+@media (min-width: 1281px) {
+	.form-wrapper{
+		padding-top: 10%;
+	}
+}
+
+/*
+##Device = Laptops, Desktops
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.form-wrapper{
+		padding-top: 7%;
+	}
+}
+
+/*
+##Device = Tablets, Ipads (portrait)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.form-wrapper{
+		padding-top: 7%;
+	}
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.form-wrapper{
+		padding-top: 10%;
+	}
+ 
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.form-wrapper{
+		padding-top: 15%;
+	}
+  
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+*/
+
+@media (max-width: 480px) {
+	.form-wrapper{
+		padding-top: 40%;
+	}
+  
 }

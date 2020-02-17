@@ -20,8 +20,9 @@
         <div class="t-wrapper" data-aos="fade-down" data-aos-duration="500">
             <h1 id="title" class="pt-2">Course Feedback Survey</h1>
         </div>
+        <div class="form-wrapper">
         <p id="description" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">Give us a feedback on how educative this course was to you so that we can provide with a better</p>
-        <form id="survey-form" data-aos="fade-up" data-aos-duration="1000">
+        <form id="survey-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <ul class="p-list">
                 <li class="p-item"><label for="name" id="name-label">What is your name?</label></li>
                 <li class="p-item"><input type="text" name="name" id="name" placeholder="Name" required></li>
@@ -40,8 +41,8 @@
             </select>
             </div>
             <div>
-                <ul class="p-list text-left">
-                    <li class="p-item"><label for="name" id="dropdown-label">How soon were you able to finish the course?   </label></li>
+                <ul class="p-list">
+                    <li class="p-item"><label for="name" id="dropdown-label">How soon were you able to finish the course?</label></li>
                     <li class="p-item"><input type="radio" name="duration" value="Less than Month" >Less than Month</li>
                     <li class="p-item"><input type="radio" name="duration" value="Less than Week" >Less than Week</li>
                     <li class="p-item"><input type="radio" name="duration" value="Less than 3 days" >Less than 3 days</li>
@@ -49,13 +50,17 @@
                 </ul>
             </div>
             <div>
-                <input type="checkbox" name="check" value="Absolute beginner">Absolute beginner
-                <input type="checkbox" name="check" value="Junior developer">Junior developer
-                <input type="checkbox" name="check" value="Senior Developer ">Senior Developer 
+                <ul class="p-list">
+                    <li class="p-item"><label for="checkbox">How soon were you able to finish the course?</label></li>
+                    <li class="p-item"><input type="checkbox" name="check" value="Absolute beginner">Absolute beginner</li>
+                    <li class="p-item"><input type="checkbox" name="check" value="Junior developer">Junior developer</li>
+                    <li class="p-item"><input type="checkbox" name="check" value="Senior Developer ">Senior Developer</li>
+                </ul>
             </div>
             <textarea name="feedback" id="" cols="30" rows="10"></textarea><br>
             <input type="submit" value="Submit" id="submit">
         </form>
+        </div>
     </main>
     
     <!-- Optional JavaScript -->
