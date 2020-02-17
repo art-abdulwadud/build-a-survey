@@ -11,32 +11,43 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <title>Build A Survey</title>
     <link href="css/aos.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Akronim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="text-center">
-        <div class="t-wrapper">
-            <h1 id="title">Course Feedback Survey</h1>
+        <div class="t-wrapper" data-aos="fade-down" data-aos-duration="500">
+            <h1 id="title" class="pt-2">Course Feedback Survey</h1>
         </div>
-        <p id="description">Give us a feedback on how educative this course was to you so that we can provide with a better</p>
-        <form id="survey-form">
-            <label for="name" id="name-label">What is your name?</label><br>
-            <input type="text" name="name" id="name" placeholder="Name" required><br>
-            <label for="name" id="email-label">What is your email address?</label><br>
-            <input type="email" name="email" id="email" placeholder="Email" required><br>
-            <label for="name" id="number-label">How old are you</label><br>
-            <input type="number" name="number" id="number" placeholder="Age" min="1" max="30" required><br>
+        <p id="description" data-aos="fade-down" data-aos-duration="500" data-aos-delay="100">Give us a feedback on how educative this course was to you so that we can provide with a better</p>
+        <form id="survey-form" data-aos="fade-up" data-aos-duration="1000">
+            <ul class="p-list">
+                <li class="p-item"><label for="name" id="name-label">What is your name?</label></li>
+                <li class="p-item"><input type="text" name="name" id="name" placeholder="Name" required></li>
+                <li class="p-item"><label for="name" id="email-label">What is your email address?</label></li>
+                <li class="p-item"><input type="email" name="email" id="email" placeholder="Email" required></li>
+                <li class="p-item"><label for="name" id="number-label">How old are you</label></li>
+                <li class="p-item"><input type="number" name="number" id="number" placeholder="Age" min="1" max="30" required></li>
+            </ul>
             <label for="name" id="dropdown-label">How useful was this course to you?</label><br>
+            <div class="text-center">
             <select name="dropdown" id="dropdown" required>
                 <option value="">Really useful</option>
                 <option value="">Useful</option>
                 <option value="">A bit useful</option>
                 <option value="">Not useful at all</option>
-            </select><br>
-            <label for="name" id="dropdown-label">How soon were you able to finish the course?</label><br>
-            <input type="radio" name="duration" value="Less than Month"><label>Less than Month</label><br>
-            <input type="radio" name="duration" value="Less than Week"><label>Less than Week</label><br>
-            <input type="radio" name="duration" value="Less than 3 days"><label>Less than 3 days</label><br>
-            <input type="radio" name="duration" value="Less than that"><label>Less than that</label><br>
+            </select>
+            </div>
+            <div>
+                <ul class="p-list text-left">
+                    <li class="p-item"><label for="name" id="dropdown-label">How soon were you able to finish the course?   </label></li>
+                    <li class="p-item"><input type="radio" name="duration" value="Less than Month" >Less than Month</li>
+                    <li class="p-item"><input type="radio" name="duration" value="Less than Week" >Less than Week</li>
+                    <li class="p-item"><input type="radio" name="duration" value="Less than 3 days" >Less than 3 days</li>
+                    <li class="p-item"><input type="radio" name="duration" value="Less than that" >Less than that</li>
+                </ul>
+            </div>
             <div>
                 <input type="checkbox" name="check" value="Absolute beginner">Absolute beginner
                 <input type="checkbox" name="check" value="Junior developer">Junior developer

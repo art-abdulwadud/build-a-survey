@@ -2,52 +2,48 @@ body{
     margin: 0;
     padding: 0;
 }
-
-
-/*
-  ##Device = Desktops
-*/
-
-@media (min-width: 1281px) {
-
+main{
+	background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
 }
-
-/*
-##Device = Laptops, Desktops
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
+/** Title wrapper **/
+.t-wrapper{
+	background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+	min-height: 10vh;
 }
-
-/*
-##Device = Tablets, Ipads (portrait)
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
+#title{
+	font-family: 'Akronim', cursive;
+	font-size: calc(100% + 30px);
 }
-
-/*
-##Device = Tablets, Ipads (landscape)
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
- 
+#description{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: calc(60% + 10px);
 }
-
-/*
-##Device = Low Resolution Tablets, Mobiles (Landscape)
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
+/** Personal info sec **/
+.p-list{
+	list-style: none;
+	display: contents;
 }
-
-/*
-##Device = Most of the Smartphones Mobiles (Portrait)
-*/
-
-@media (max-width: 480px) {
-  
+form{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	margin-left: 4%;
+	margin-right: 4%;
+	background: white;
+	padding-top: 10px;
+	border-radius: 20px;
+}
+input[type="text"],input[type="email"],input[type="number"],label,option{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: calc(60% + 15px);
+} 
+input[type="text"],input[type="email"], input[type="number"]{
+	min-width: 70%;
+}
+#dropdown{
+	max-width: 200px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: calc(60% + 15px);
 }
