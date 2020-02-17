@@ -33,7 +33,7 @@ When using radio buttons, you can group them using the `name` attribute if you w
 <input type="radio" name="generations" required>Second
 <input type="radio" name="generations" required>Third
 ```
-You can set the name tag attribute to whatever name you wish.
+You can set the name attribute to whatever name you wish.
 
 For checkbox type:
 ```
@@ -54,13 +54,13 @@ For creating a textarea
 ```
 <textarea placeholder="Please send us a feedback..." name="feedback" cols="25" rows="7" required></textarea>
 ```
-You can set the rows and columns to your custom preference. They determin the height and width of the textarea.
+You can set the rows and columns attributes to your custom preference. They determin the height and width of the textarea.
 
 For creating a submit input
 ```
 <input type="submit" value="Submit">
 ```
-You can set the value to whatever you please
+You can set the value attribute to whatever you please
 
 And finally, you can wrap all this tags within a form tag
 ```
